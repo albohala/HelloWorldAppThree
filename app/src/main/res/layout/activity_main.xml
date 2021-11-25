@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="183dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="114dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/instagram_logo_written" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="341dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/Roboto_Light"
+        android:hint="Phone number, username or email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="7dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="341dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="35dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:fontFamily="@font/Roboto_Light"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="7dp"
+        android:textColor="@color/dark_gray"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:backgroundTint="@color/login_blue"
+        android:fontFamily="@font/Roboto_Light"
+        android:text="Log In"
+        android:textAllCaps="false"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnForgotPassword" />
+
+    <Button
+        android:id="@+id/btnForgotPassword"
+        android:layout_width="144dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="232dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="35dp"
+        android:background="false"
+        android:fontFamily="@font/Roboto_Bold"
+        android:text="Forgot password?"
+        android:textAllCaps="false"
+        android:textColor="@color/login_blue"
+        android:textSize="9dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnFacebookLogIn"
+        android:layout_width="341dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:background="false"
+        android:text="Continue as Abdullah Albohalika"
+        android:textAllCaps="false"
+        android:textColor="@color/login_blue"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn" />
+
+    <ImageView
+        android:id="@+id/imgFacebookButton"
+        android:layout_width="34dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="51dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogIn"
+        app:srcCompat="@drawable/facebook_logo" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="43dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/border_gray"
+        app:layout_constraintEnd_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogIn" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="180dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="42dp"
+        android:background="@color/border_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogIn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/Roboto_Bold"
+        android:text="OR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFacebookLogIn" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+
+            android:text="Don't have an account? " />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="false"
+            android:gravity="left"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            android:textColor="@color/login_blue" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="175dp"
+        android:fontFamily="@font/Roboto_Medium"
+        android:text="Instagram from Facebook"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
